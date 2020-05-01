@@ -26,21 +26,17 @@ public class Post {
     String title;
 
     @Column(name = "text")
-    @ApiModelProperty(notes = "The post content")
     String text;
 
     @Column(name = "author")
-    @ApiModelProperty(notes = "Posted by")
     Integer author;
 
     @Column(name = "image")
-    @ApiModelProperty(notes = "Post picture id")
     Integer image;
 
     @Column(name = "date")
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
-    @ApiModelProperty(notes = "Date of creation")
     Date date;
 
     @Column(name = "likes")
@@ -50,7 +46,6 @@ public class Post {
 
     @Column(name = "dislikes")
     @NotNull
-    @ApiModelProperty(notes = "Count dislikes")
     Integer dislikes;
 
     @Column(name = "views")
