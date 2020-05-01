@@ -18,7 +18,6 @@ public class Post {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @ApiModelProperty(notes = "The database generated post ID")
     private Integer id;
 
     @Column(name = "title", length = 200)
