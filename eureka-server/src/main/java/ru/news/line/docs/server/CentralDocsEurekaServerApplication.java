@@ -11,5 +11,6 @@ public class CentralDocsEurekaServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CentralDocsEurekaServerApplication.class, args);
+		System.out.println("Test");
 	}
 }
